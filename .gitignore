@@ -42,3 +42,7 @@ next-env.d.ts
 
 # local data
 /data
+
+# local notes
+/dev.log
+/HANDOFF.md
