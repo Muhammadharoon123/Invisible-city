@@ -1,6 +1,6 @@
 # Role prototype (fake data)
 
-A clickable mock of the role screens from `docs/PRD.md` section 5. It has no database, API or sign-in: every Issue lives in browser memory and **Reset data** puts the seed back. Open it at `/prototype`.
+A clickable mock of the role screens from `docs/PRD.md` section 5. It has no database, API or sign-in: every Issue lives in browser memory and **Reset data** puts the seed back. It lives in `app/_prototype`, and the leading `_` stops Next.js from turning it into a page. To view it, rename the folder back to `app/prototype` and open `/prototype`.
 
 The team wants to **keep** this prototype as a reference instead of deleting it once the real screens exist. It was first committed as `95295c2` on branch `claude/quizzical-chaplygin-8c1b53`, so it can always be recovered from git.
 
@@ -8,7 +8,7 @@ The team wants to **keep** this prototype as a reference instead of deleting it 
 
 | File | What it holds |
 |---|---|
-| `page.tsx` | The `/prototype` route. It only renders `Prototype`. |
+| `page.tsx` | The page for the route (`/prototype` when the folder is named `prototype`). It only renders `Prototype`. |
 | `Prototype.tsx` | The role picker, the shared state (`useReducer`) and the toast. |
 | `data.ts` | Types, the Category → Department table, seed Offices, Issues and Access requests, the priority and distance formulas, and the reducer with every action. |
 | `bits.tsx` | Small shared pieces: status pill, Category chip, photo placeholder, photo picker, status stepper, timeline, toast. |
