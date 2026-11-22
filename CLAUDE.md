@@ -17,6 +17,16 @@ Civic-problem reporting for Islamabad. Hackathon deadline: 28 November 2026.
 - Each build step leaves the app working and deployed: deploy to Vercel after each step, never batch.
 - Reporter email and phone are shown only to Authorities and the assigned Office; public pages stay anonymous.
 
+## Agent skills
+
+### Issue tracker
+
+Local markdown under `.scratch/<feature>/`, committed with the branch. See `docs/agents/issue-tracker.md`.
+
+### Domain docs
+
+Single-context: one `GLOSSARY.md` and `docs/adr/` at the root. See `docs/agents/domain.md`.
+
 ## Machine gotchas (Windows)
 
 - Node is not on PATH. Prefix the shell: PowerShell `$env:Path = "E:\Node;" + $env:Path`, Git Bash `export PATH="/e/Node:$PATH"`.

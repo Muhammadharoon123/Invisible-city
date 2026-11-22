@@ -1,0 +1,21 @@
+# Domain Docs
+
+How the engineering skills should consume this repo's domain documentation. This repo is **single-context**.
+
+## Before exploring, read these
+
+- **`GLOSSARY.md`** at the repo root.
+- **`docs/adr/`**: read ADRs that touch the area you're about to work in.
+- **`docs/PRD.md`**: the agreed product rules.
+
+## Use the glossary's vocabulary
+
+When your output names a domain concept (in an issue title, a refactor proposal, a hypothesis, a test name), use the term as defined in `GLOSSARY.md`, not the synonyms it lists under _Avoid_.
+
+If the concept you need isn't in the glossary yet, either you're inventing language the project doesn't use (reconsider) or there's a real gap (note it for `/domain-modeling`).
+
+## Flag ADR conflicts
+
+If your output contradicts an existing ADR, surface it explicitly rather than silently overriding:
+
+> _Contradicts ADR-0001 (Supabase Postgres), but worth reopening because…_
